@@ -20,7 +20,7 @@
 
 
 
-            import { useContext } from 'react';
+import { useContext } from 'react';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
 import { QuizContext } from '../components/Layouts';
 
@@ -41,3 +41,6 @@ const Chart = () => {
 };
 
 export default Chart;
+
+const quizzes = useContext(QuizContext);
+    const data = quizzes.data;

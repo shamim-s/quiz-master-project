@@ -1,11 +1,12 @@
 import React from 'react';
+import Chart from './Chart';
 
 
 const Statistic = () => {
 
     return (
         <div>
-            <h1>Statistic</h1>
+            <Chart></Chart>
         </div>
     );
 };
