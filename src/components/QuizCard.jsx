@@ -13,6 +13,7 @@ const QuizCard = ({quiz}) => {
                     <h1 className='text-xl font-bold'>{name}</h1>
                     <h4 className='mt-2 font-semibold'>Quiz: {total}</h4>
 
+                    {/* Start Quiz button  */}
                     <Link to={`../quiz/${id}`}>
                     <button className='lg:absolute md:absolute lg:bottom-2 md:bottom-2 lg:left-auto md:left-auto lg:w-10/12 md:w-10/12
                     w-72 bg-slate-900 p-1 lg:rounded-full md:rounded-full  rounded-full font-bold text-white mt-4'>Start Quiz</button>

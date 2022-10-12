@@ -1,11 +1,11 @@
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useState } from 'react';
+import React from 'react';
 import { toast, ToastContainer } from 'react-toastify';
   import "react-toastify/dist/ReactToastify.css";
 
 const Quiz = ({quiz}) => {
-    const {id, correctAnswer, question, options} = quiz;
+    const {correctAnswer, question, options} = quiz;
 
     const success = () =>{
         toast.success("Correct Answer!", {
