@@ -8,8 +8,8 @@ const Layouts = () => {
     const quizzes = useLoaderData();
     return (
         <QuizContext.Provider value={quizzes}>
-            <Header></Header>
-            <Outlet></Outlet>
+                <Header></Header>
+                <Outlet></Outlet>
         </QuizContext.Provider>
     );
 };
