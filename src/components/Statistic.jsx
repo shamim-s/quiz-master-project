@@ -5,7 +5,7 @@ import Chart from './Chart';
 const Statistic = () => {
 
     return (
-        <div>
+        <div className='lg:w-full md:w-full'>
             <Chart></Chart>
         </div>
     );

@@ -37,6 +37,9 @@ const Quiz = ({quiz}) => {
     return (
         // Main All Questions and answere div 
         <div className='border-2 border-slate-900 lg:rounded-xl md:rounded-xl m-4 relative'>
+            <div className='lg:p-0 md:p-0 p-4'>
+                <ToastContainer/>
+            </div>
             <h1 
             className='text-center lg:text-xl md:text-2xl font-bold mt-8'>{question} </h1>
             <FontAwesomeIcon 
@@ -53,7 +56,7 @@ const Quiz = ({quiz}) => {
                 onClick={() => quizHandler(options[0])}
                 className={`bg-gray-900 p-6 text-white font-bold m-4 rounded-xl hover:bg-slate-700`}>
                     <p>{options[0]}</p>
-                    <ToastContainer />
+                    
                 </div>
 
             {/*  question 2 */}
